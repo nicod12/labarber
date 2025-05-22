@@ -1,6 +1,5 @@
 <script>
-    import gsap from "gsap";
-    import { onMount } from "svelte";
+
     import "./services.style.css";
     
     const items = [
@@ -27,15 +26,6 @@
         },
     ];
 
-        onMount(() => {
-        gsap.from(".art", {
-            y: 100,
-            opacity: 0,
-            duration: 2,
-            stagger: 0.3,
-            ease: "power3.out"
-        });
-    });
 </script>
 
 <section id="services" class="service art" style="scroll-margin-top: 2.5rem;">
