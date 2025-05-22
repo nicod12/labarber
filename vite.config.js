@@ -1,7 +1,23 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
+import compression from 'vite-plugin-compression';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [svelte()],
-})
+  plugins: [
+    svelte(),
+    compression({
+      algorithm: 'brotliCompress', // o 'gzip'
+      ext: '.br', // o '.gz'
+    }),
+  ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Separá gsap en su propio chunk para no bloquear el hilo principal
+          gsap: ['gsap'],
+        },
+      },
+    },
+  },
+});
