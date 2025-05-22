@@ -1,0 +1,161 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        width: 100%;
+         z-index: 1000;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          background-color: #FFFFFF;
+}
+
+
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-cta {
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 8px 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    border: 1px solid black !important;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-hamburger {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    display: none;
+    margin-top: 5px;
+}
+
+.container-buttons ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+.container-buttons ul li{
+   transition: text-decoration 0.2s ease-in-out;
+}
+.container-buttons ul li:hover {
+ text-decoration: underline;
+}
+
+.container-buttons ul a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 400px) {
+    nav {
+        padding: 0;
+    }
+
+    .container-buttons {
+        margin: 0 1rem;
+    }
+
+    .btn-hamburger {
+        display: flex;
+    }
+
+
+    .btn-cta {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0;
+    }
+
+    .container-buttons {
+        margin: 0 1rem;
+    }
+
+    .btn-hamburger {
+        display: flex;
+    }
+
+    .container-buttons ul {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 810px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    .container-buttons ul {
+        display: none;
+    }
+
+    .btn-hamburger {
+        display: flex;
+    }
+
+    .container-buttons {
+        gap: 25px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1440px;
+    padding: 1rem 2rem;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+     nav .logo {
+        display: none;
+     }
+
+    .btn-cta:hover {
+        background-color: #F6EEEE;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}

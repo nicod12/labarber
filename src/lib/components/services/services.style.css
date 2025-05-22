@@ -1,0 +1,282 @@
+.service {
+    background-color: white;
+    padding-bottom: 3rem;
+}
+h2 {
+    font-size: 35px;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.desktop-services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #B4ADAD;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    display: flex;
+    max-height: 172px;
+}
+
+.card-image {
+    border-left: 1px solid #B4ADAD;
+}
+
+.card-content {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding:0 0.4rem;
+}
+
+
+.font-title {
+    font-size: 24px;
+}
+
+.font-description {
+    font-size: 15px;
+}
+
+.opensans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.price {
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0.3rem;
+}
+
+.margen {
+    position: absolute;
+    max-height: 172px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.card-image img {
+    max-width: 172px;
+    height: auto;
+}
+
+section article:nth-of-type(2) .card-content {
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    padding: 0 0.5rem;
+}
+section article:nth-of-type(2) .margen {
+    transform: scaleX(-1); 
+}
+section article:nth-of-type(2) .margen {
+    top: 0;
+    right: 0;
+    left: auto;
+}
+
+
+section article:nth-of-type(2) .card {
+    flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    article {
+        margin: 0 0.5rem;
+    }
+
+    .margen {
+        max-height: 160px;
+    }
+
+    .card {
+        width: auto;
+        max-height: 160px;
+    }
+
+
+    .card-content {
+        margin-top: 0.6rem;
+        margin-left: 1.4rem;
+    }
+
+    .service article:nth-of-type(2) .card-content {
+        margin-top: 1rem;
+        margin-left: 0.6rem;
+        padding: 0 1rem 0 0.1rem;
+    }
+
+
+    .card-image img {
+        max-width: 160px;
+        height: auto;
+    }
+
+
+
+    .font-title {
+        font-size: 20px;
+    }
+
+    .font-description {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+
+}
+
+@media screen and (min-width: 400px) {
+    
+    .service article:nth-of-type(2) .card-content {
+        margin-top: 1rem;
+        margin-left: 0.6rem;
+        padding: 0 0 0.3rem;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 810px) {
+    article {
+        max-width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        border: 1px solid #B4ADAD;
+        border-radius: 8px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .margen {
+        max-height: 200px;
+    }
+
+    .card-image img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .card-content {
+        margin-top: 1rem;
+        margin-left: 1.4rem;
+    }
+
+
+    .font-title {
+        font-size: 26px;
+    }
+
+    .font-description {
+        font-size: 18px;
+    }
+
+
+
+    .price {
+        font-size: 24px;
+
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+       .service{
+        margin: 3rem auto;
+        max-width: 1024px;
+    }
+    h2 {
+        padding: 2.5rem 0;
+        font-size: 40px;
+    }
+
+    .desktop-services {
+        flex-direction: row;
+    }
+
+
+    .service article:nth-of-type(2) .card {
+        flex-direction: row;
+    }
+
+     .service article:nth-of-type(2) .card-content{
+         margin-top: 1rem;
+         margin-left: 1rem;
+         padding: 0 0.5rem;
+     }
+
+     section article:nth-of-type(2) .margen {
+    transform: scaleX(1); 
+}
+
+    .font-title {
+        font-size: 26px;
+        white-space: nowrap;
+    }
+
+    .font-description {
+        font-size: 12px;
+    }
+
+
+
+    .price {
+        font-size: 22px;
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+       .service{
+        margin: 3rem auto;
+        max-width: 1280px;
+    }
+        .desktop-services {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .desktop-services {
+        display: flex;
+    }
+    .service article:nth-of-type(2) .card {
+        flex-direction: row;
+    }
+
+    .service article:nth-of-type(2) .margen {
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+
+    .font-title {
+        font-size: 26px;
+    }
+
+    .font-description {
+        font-size: 14px;
+    }
+
+
+
+    .price {
+        font-size: 24px;
+
+    }
+
+}

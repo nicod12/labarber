@@ -1,0 +1,53 @@
+.dropdown {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 30px;
+    height: auto;
+    width: 240px;
+    right: 0;
+    padding: 1rem;
+    z-index: 1001;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid rgb(187, 186, 186);
+}
+
+.dropdown div {
+    position: relative;
+}
+
+.links {
+    padding-top: 2.5rem;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.links li {
+    width: 100%
+}
+
+.links li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.dropdown div button {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .dropdown {
+        display: none;
+    }
+}

@@ -1,0 +1,28 @@
+  .location {
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container-location h3 {
+    font-size: 35px;
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  .ol-popup {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  position: absolute;
+  transform: translate(-50%, -100%);
+  pointer-events: none;
+}
+
+.ol-popup-text {
+  color: #333;
+}
