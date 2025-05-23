@@ -4,7 +4,7 @@
 
     // URL fija del único barbero disponible
     const calendlyUrl =
-        "https://calendly.com/nicolasartemiodume/60?hide_event_type_details=1&hide_gdpr_banner=1";
+        "https://calendly.com/nicolasartemiodume/60?hide_gdpr_banner=1";
 
     onMount(async () => {
         await tick(); // Asegura que el DOM esté listo
