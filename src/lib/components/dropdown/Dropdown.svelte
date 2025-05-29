@@ -42,7 +42,7 @@
 
       <ul class="links bebas-neue-regular">
         <li><a href="#home">Inicio</a></li>
-        <li><a href="#service">Servicios</a></li>
+        <li><a href="#services">Servicios</a></li>
         <li><a href="#gallery">Galería</a></li>
         <li><a href="#location">Ubicación</a></li>
       </ul>
